@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Shell
+    x:Class="WordUpClone.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:WordUpClone"
+    xmlns:pages="clr-namespace:WordUpClone.Pages"
+    Shell.FlyoutBehavior="Disabled">
+
+    <ShellContent
+        Title="Page one"
+        ContentTemplate="{DataTemplate pages:PageOne}"
+        Route="PageOne" />
+
+    <ShellContent
+        Title="Page two"
+        ContentTemplate="{DataTemplate pages:PageTwo}"
+        Route="PageTwo" />
+
+    <ShellContent
+        Title="Page three"
+        ContentTemplate="{DataTemplate pages:PageThree}"
+        Route="PageThree" />
+
+
+</Shell>
