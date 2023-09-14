@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WordUpClone.Pages.PageTwo">
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <HorizontalStackLayout Padding="10,20,0,20">
+                <ImageButton Clicked="OnBackCLicked" HorizontalOptions="Start" Source="back.svg" HeightRequest="40"
+                             WidthRequest="40" />
+            </HorizontalStackLayout>
+
+            <Label HorizontalTextAlignment="Center" 
+                   Text="Choose preferred accent" 
+                   FontSize="20"
+                   Padding="50"
+                   Style="{StaticResource PrimaryText}"/>
+
+            <Image Source="headsetgirl.svg" Margin="50" />
+
+            <VerticalStackLayout Margin="50,20,50,0">
+                <Button x:Name="AmericanBtn" Text="American" Clicked="OnAmericanClicked" 
+                        Style="{DynamicResource SecondaryButton}" />
+                <Button x:Name="BritishBtn" Text="British" Clicked="OnBritishClicked"
+                        Style="{DynamicResource SecondaryButton}"
+                        Margin="0,5,0,0" />
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
